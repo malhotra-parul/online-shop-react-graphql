@@ -13,19 +13,19 @@ const Navbar = () => {
       shape="roundedBottom"
       justifyContent="around"
     >
-      <NavLink to="/signup">
+      <NavLink activeClassName="active"  to="/signup">
         <Text size="xl" weight="bold" color="white">
           Sign Up
         </Text>
       </NavLink>
 
-      <NavLink to="/">
+      <NavLink activeClassName="active" exact to="/">
         <Heading size="md" color="white">
           E-store
         </Heading>
       </NavLink>
 
-      <NavLink to="/signin">
+      <NavLink activeClassName="active" to="/signin">
         <Text size="xl" weight="bold" color="white">
           Sign In
         </Text>

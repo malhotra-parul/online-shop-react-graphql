@@ -4,3 +4,13 @@
     padding: 0;
     text-decoration: none;
 }
+
+html, body{
+    background-color: #f6f9fc;
+}
+
+.active{
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: cornsilk;
+}
