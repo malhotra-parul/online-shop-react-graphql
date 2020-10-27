@@ -3,17 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.2.5",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.21.0",
     "gestalt": "^14.20.0",
+    "gql": "^1.1.2",
+    "graphql": "^15.4.0",
+    "next-apollo": "^5.0.1",
     "react": "^17.0.1",
+    "react-apollo": "^3.1.5",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.4",
     "react-spinners": "^0.9.0",
-    "react-stripe-elements": "^6.1.2",
-    "strapi-sdk-javascript": "^0.3.3"
+    "react-stripe-elements": "^6.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

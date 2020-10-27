@@ -2,46 +2,35 @@
   "name": "server",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application.",
-  "main": "./server.js",
+  "description": "A Strapi application",
   "scripts": {
-    "setup": "cd admin && npm run setup",
-    "start": "node server.js",
-    "strapi": "node_modules/strapi/bin/strapi.js",
-    "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
-    "postinstall": "node node_modules/strapi/lib/utils/post-install.js"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.12.2",
-    "eslint-config-airbnb": "^13.0.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.8.0"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "lodash": "4.x.x",
-    "strapi": "3.0.0-alpha.14",
-    "strapi-hook-mongoose": "3.0.0-alpha.14"
+    "strapi": "3.2.5",
+    "strapi-admin": "3.2.5",
+    "strapi-connector-mongoose": "3.2.5",
+    "strapi-plugin-content-manager": "3.2.5",
+    "strapi-plugin-content-type-builder": "3.2.5",
+    "strapi-plugin-email": "3.2.5",
+    "strapi-plugin-graphql": "3.2.5",
+    "strapi-plugin-upload": "3.2.5",
+    "strapi-plugin-users-permissions": "3.2.5",
+    "strapi-utils": "3.2.5"
   },
   "author": {
-    "name": "admin",
-    "email": "",
-    "url": ""
+    "name": "A Strapi developer"
   },
-  "maintainers": [
-    {
-      "name": "admin",
-      "email": "",
-      "url": ""
-    }
-  ],
   "strapi": {
-    "packageManager": "npm",
-    "uuid": "d5f971e9-4c3a-4c12-a999-ffe880e891ef"
+    "uuid": "5741a8d3-62a8-4e1a-bc3d-1b5e39ffabfa"
   },
   "engines": {
-    "node": ">= 9.0.0",
-    "npm": ">= 5.0.0"
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
   },
   "license": "MIT"
 }

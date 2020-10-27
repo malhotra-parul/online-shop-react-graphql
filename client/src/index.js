@@ -7,6 +7,16 @@ import Signup from "./components/Signup";
 import Checkout from "./components/Checkout";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {ApolloClient, HttpLink, InMemoryCache, ApolloProvider} from "@apollo/client"
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337"
+
+const client = new ApolloClient({
+  link: new HttpLink({
+    uri: `${API_URL}/graphql`
+  }),
+  cache: new InMemoryCache()
+})
 
 const Root = () => (
   <Router>
@@ -24,8 +34,8 @@ const Root = () => (
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ApolloProvider client={client}>
     <Root />
-  </React.StrictMode>,
+    </ApolloProvider>,
   document.getElementById('root')
 );
