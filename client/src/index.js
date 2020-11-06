@@ -6,6 +6,7 @@ import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 import Checkout from "./components/Checkout";
 import Navbar from "./components/Navbar";
+import Products from "./components/Products";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {ApolloClient, HttpLink, InMemoryCache, ApolloProvider} from "@apollo/client"
 
@@ -27,6 +28,7 @@ const Root = () => (
       <Route component={Signin} path="/signin"/>
       <Route component={Signup} path="/signup"/>
       <Route component={Checkout} path="/checkout"/>
+      <Route component={Products} path="/:categoryId" />
     </Switch>
     </>
   </Router>

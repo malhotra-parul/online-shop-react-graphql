@@ -17,12 +17,41 @@ html, body{
 
 .outer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-gap: 1.5em;
 }
 
 .card{
     border: 1px solid #edeff1;
     padding: 1em 2em;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
+    border-radius: 1em;
 }
+
+h4{
+    font-size: 1.3em;
+    color: #585858;
+}
+
+p{
+    font-size: 1em;
+    color: #585858;
+}
+
+.loader{
+    height: 90vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+
+@media screen and (max-width: 75em) {
+    p {
+      font-size: 1.3em;
+    }
+
+    h4{
+        font-size: 1.em;
+    }
+  }
